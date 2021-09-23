@@ -54,6 +54,16 @@
         <!-- TEST -->
     </style>
 
+    <style name="Payzily.Stripe.CardMultilineWidget.TextInputLayoutAppearance" parent="TextAppearance.AppCompat">
+        <!-- NOT WORKING -->
+        <!-- <item name="android:textColorHint">#FF0000</item> -->
+
+        <!-- WORKING -->
+        <item name="android:textColor">@color/ns_accent</item> <!-- label focused -->
+
+        <!-- TEST -->
+    </style>
+
     <style name="Payzily.Stripe.CardMultilineWidget.TextInput" parent="StripeDefaultTheme">
         <!-- NOT WORKING -->
         <!-- <item name="android:editTextColor">@color/textPrimary</item> -->
@@ -65,12 +75,13 @@
         <!-- <item name="colorControlNormal">#00FF00</item> -->
         <!-- <item name="android:colorControlNormal">#00FF00</item> -->
         <!-- <item name="colorOnSurface">#00FF00</item> -->
+        <!-- <item name="boxStrokeColor">#00FF00</item> -->
 
         <!-- WORKING -->
-        <item name="android:textColor">#0000FF</item> <!-- text color -->
-        <item name="android:textColorHint">#FF0000</item> <!-- hint text color -->
-
+        <item name="android:textColor">@color/stripe_input_color</item> <!-- text color (value) -->
+        <item name="android:textColorHint">@color/stripe_hint_color</item> <!-- hint text color -->
+        <item name="backgroundTint">@color/stripe_hint_color</item> <!-- border bottom -->
         <!-- TEST -->
-        <item name="boxStrokeColor">#00FF00</item>
+        <item name="android:textSize">18sp</item>
     </style>
 </resources>

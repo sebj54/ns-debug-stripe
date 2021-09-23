@@ -10,9 +10,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/acc_label_card_number"
-        android:layout_marginTop="@dimen/stripe_add_card_element_vertical_margin">
+        android:layout_marginTop="@dimen/stripe_add_card_element_vertical_margin"
+        app:hintTextAppearance="@style/Payzily.Stripe.CardMultilineWidget.TextInputLayoutAppearance"
+        android:textColorHint="@color/stripe_hint_color">
 
         <com.stripe.android.view.CardNumberEditText
+            style="@style/Payzily.Stripe.CardMultilineWidget.TextInput"
             android:id="@+id/et_card_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,7 +42,9 @@
             android:layout_marginTop="@dimen/stripe_add_card_element_vertical_margin"
             android:layout_marginEnd="@dimen/stripe_add_card_expiry_middle_margin"
             android:layout_weight="1"
-            android:hint="@string/acc_label_expiry_date">
+            android:hint="@string/acc_label_expiry_date"
+            app:hintTextAppearance="@style/Payzily.Stripe.CardMultilineWidget.TextInputLayoutAppearance"
+            android:textColorHint="@color/stripe_hint_color">
 
             <com.stripe.android.view.ExpiryDateEditText
                 style="@style/Payzily.Stripe.CardMultilineWidget.TextInput"
@@ -61,9 +66,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/stripe_add_card_element_vertical_margin"
             android:layout_marginEnd="@dimen/stripe_add_card_expiry_middle_margin"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            app:hintTextAppearance="@style/Payzily.Stripe.CardMultilineWidget.TextInputLayoutAppearance"
+            android:textColorHint="@color/stripe_hint_color">
 
             <com.stripe.android.view.CvcEditText
+                style="@style/Payzily.Stripe.CardMultilineWidget.TextInput"
                 android:id="@+id/et_cvc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -80,9 +88,12 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginTop="@dimen/stripe_add_card_element_vertical_margin">
+            android:layout_marginTop="@dimen/stripe_add_card_element_vertical_margin"
+            app:hintTextAppearance="@style/Payzily.Stripe.CardMultilineWidget.TextInputLayoutAppearance"
+            android:textColorHint="@color/stripe_hint_color">
 
             <com.stripe.android.view.PostalCodeEditText
+                style="@style/Payzily.Stripe.CardMultilineWidget.TextInput"
                 android:id="@+id/et_postal_code"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
